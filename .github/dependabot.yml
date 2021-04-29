@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: androidx.test:runner
+    versions:
+    - 1.3.1-alpha03
+    - 1.4.0-alpha04
+  - dependency-name: com.android.tools.build:gradle
+    versions:
+    - 4.1.2
+  - dependency-name: junit:junit
+    versions:
+    - 4.13.1
+  - dependency-name: com.evrencoskun.library:tableview
+    versions:
+    - 0.8.9.2
